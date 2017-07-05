@@ -6,7 +6,7 @@ Today I would like to shed more light on the first project I have previously men
 
 ## Project Benson
 
-![Detective Benson](Detective_benson.jpg)
+![Detective Benson](../images/detective_benson.jpg)
 
 ### Back Story
 
