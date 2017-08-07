@@ -4,7 +4,8 @@ title: Week 6 Day 3 - Third Project - Hunting for Exoplanets Using Machine Learn
 ---
 <iframe src="https://docs.google.com/presentation/d/1pucUKCzdeLy-XIkigfJ3_PBa1bkkxwaXUjpiDN_olYA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-And here is my Fourier Transform visualization from the slides above. Basically, I took the mean of all frequency spectra for exoplanet-containing stars and for stars without exoplanets and plotted them all together. Where you see orange, there frequencies of stars with no exoplanets dominate. The reverse is true for where you see green: exoplanet-containing stars dominate there.
+And here is my Fourier Transform visualization from the slides above. Basically, I took the mean of all frequency spectra for exoplanet-containing stars and for stars without exoplanets and plotted them all together. Where you see orange, there frequencies of stars with no exoplanets dominate. The reverse is true for where you see green: exoplanet-containing stars dominate there.  
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
