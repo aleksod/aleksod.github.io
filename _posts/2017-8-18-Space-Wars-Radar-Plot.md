@@ -5,7 +5,7 @@ title: Space Wars! or Star Trek through the Years
 
 ## Presentation Slides for the Project  
 
-<iframe src="https://docs.google.com/presentation/d/1zuFELeFsi3nDDo9JHKE2g3BUCyYsdjZ7GOApei4rPPU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+<iframe src="https://docs.google.com/presentation/d/1zuFELeFsi3nDDo9JHKE2g3BUCyYsdjZ7GOApei4rPPU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="600" height="366" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
 
 ## Smoothed D3.js Radar Chart  
 
