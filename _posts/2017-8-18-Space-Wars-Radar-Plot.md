@@ -3,9 +3,11 @@ layout: post
 title: Space Wars! or Star Trek through the Years
 ---
 
-<iframe src="https://docs.google.com/presentation/d/1zuFELeFsi3nDDo9JHKE2g3BUCyYsdjZ7GOApei4rPPU/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+## Presentation Slides for the Project  
 
-## Smoothed D3.js Radar Chart
+<iframe src="https://docs.google.com/presentation/d/1zuFELeFsi3nDDo9JHKE2g3BUCyYsdjZ7GOApei4rPPU/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Smoothed D3.js Radar Chart  
 
 <!-- Google fonts -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
