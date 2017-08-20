@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Week 6 Day 3 - Third Project - Hunting for Exoplanets Using Machine Learning
+title: Hunting for Exoplanets Using Machine Learning
 ---
+
+This is a classifier designed to discover exoplanet-containing stars using only light flux data. The flux data was obtained from [Kaggle](https://www.kaggle.com/keplersmachines/kepler-labelled-time-series-data).
 
 ## Slides for the Project  
 
@@ -12,6 +14,7 @@ And here is my Fourier Transform visualization from the slides above. Basically,
 <style>
 
 body {
+  text-align: center;
   font: 10px sans-serif;
 }
 
