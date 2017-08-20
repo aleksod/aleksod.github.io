@@ -89,8 +89,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("Data/spectrum_data.csv", function(error, data) {
-// d3.tsv("data.tsv", function(error, data) {
+d3.csv("/data/exoplanet_flux_spectrum.csv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
