@@ -20,7 +20,7 @@ This is my topic exploration of Star Trek TV series and movies (not including th
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.3.0/d3-legend.js" charset="utf-8"></script>
 
 <style>
-	dummy {
+	target {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 11px;
 		font-weight: 300;
@@ -35,9 +35,9 @@ This is my topic exploration of Star Trek TV series and movies (not including th
 	}
 </style>
 
-<div id="dummy">
-	<div id="target" class="radarChart"></div>
-</div>
+<p id="target">
+	<div class="radarChart"></div>
+</p>
 
 <script src="/data/radarChart.js"></script>
 <script>
