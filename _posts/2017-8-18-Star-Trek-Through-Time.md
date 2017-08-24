@@ -3,7 +3,7 @@ layout: post
 title: Space Wars! or Star Trek through the Years
 ---
 
-<p>This is my topic exploration of Star Trek TV series and movies (not including the latest alternative universe Star Trek movies). I was particularly interested in topic distribution through time.</p>
+This is my topic exploration of Star Trek TV series and movies (not including the latest alternative universe Star Trek movies). I was particularly interested in topic distribution through time.
 
 ## Presentation Slides for the Project  
 
@@ -20,7 +20,7 @@ title: Space Wars! or Star Trek through the Years
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.3.0/d3-legend.js" charset="utf-8"></script>
 
 <style>
-	target {
+	dummy {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 11px;
 		font-weight: 300;
@@ -35,7 +35,9 @@ title: Space Wars! or Star Trek through the Years
 	}
 </style>
 
-<div id="target" class="radarChart"></div>
+<div id="dummy">
+	<div id="target" class="radarChart"></div>
+</div>
 
 <script src="/data/radarChart.js"></script>
 <script>
