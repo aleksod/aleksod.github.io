@@ -3,21 +3,17 @@ layout: post
 title: Hunting for Exoplanets Using Machine Learning
 ---
 
-<div>This is a classifier designed to discover exoplanet-containing stars using only light flux data. The flux data was obtained from [Kaggle](https://www.kaggle.com/keplersmachines/kepler-labelled-time-series-data).</div>
+This is a classifier designed to discover exoplanet-containing stars using only light flux data. The flux data was obtained from [Kaggle](https://www.kaggle.com/keplersmachines/kepler-labelled-time-series-data).
 
 ## Slides for the Project  
 
 <iframe src="https://docs.google.com/presentation/d/1pucUKCzdeLy-XIkigfJ3_PBa1bkkxwaXUjpiDN_olYA/embed?start=true&loop=true&delayms=10000" frameborder="0" width="700" height="422" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
 
-<div>And here is my Fourier Transform visualization from the slides above. Basically, I took the mean of all frequency spectra for exoplanet-containing stars and for stars without exoplanets and plotted them all together. Where you see orange, there frequencies of stars with no exoplanets dominate. The reverse is true for where you see green: exoplanet-containing stars dominate there.</div>  
+And here is my Fourier Transform visualization from the slides above. Basically, I took the mean of all frequency spectra for exoplanet-containing stars and for stars without exoplanets and plotted them all together. Where you see orange, there frequencies of stars with no exoplanets dominate. The reverse is true for where you see green: exoplanet-containing stars dominate there.  
 
 <style>
 
 div {
-  all: initial; /* blocking inheritance for all properties */
-}
-
-body {
   text-align: center;
   font: 10px sans-serif;
 }
@@ -48,7 +44,7 @@ body {
 }
 
 </style>
-<body>
+<div>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -90,7 +86,7 @@ var area = d3.svg.area()
     .x(function(d) { return x(d.frequency); })
     .y1(function(d) { return y(d["avg.spectrum of stars w/exoplanets"]); });
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("div").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -163,4 +159,4 @@ d3.csv("/data/exoplanet_flux_spectrum.csv", function(error, data) {
 });
 
 </script>
-</body>
+</div>
