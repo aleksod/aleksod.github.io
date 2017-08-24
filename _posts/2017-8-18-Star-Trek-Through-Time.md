@@ -54,7 +54,7 @@ This is my topic exploration of Star Trek TV series and movies (not including th
 	//////////////////////////////////////////////////////////////
 
 	var margin = {top: 100, right: 100, bottom: 100, left: 100},
-		legendPosition = {x: 10, y: 25},
+		legendPosition = {x: 5, y: 25},
 		width = Math.min(1000, window.innerWidth - 10) - margin.left - margin.right,
 		height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 
