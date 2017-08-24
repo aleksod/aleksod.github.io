@@ -33,6 +33,16 @@ This is my topic exploration of Star Trek TV series and movies (not including th
 	.tooltip {
 		fill: #333333;
 	}
+
+	legendOriginal {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 11px;
+		font-weight: 300;
+		fill: #242424;
+		text-align: center;
+		text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+		cursor: default;
+	}
 </style>
 
 <div class="radarChart"></div>
