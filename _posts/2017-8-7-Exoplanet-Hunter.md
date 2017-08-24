@@ -16,9 +16,6 @@ title: Hunting for Exoplanets Using Machine Learning
 div {
   all: initial; /* blocking inheritance for all properties */
 }
-div * {
-  all: unset; /* allowing inheritance within #mydiv */
-}
 
 body {
   text-align: center;
