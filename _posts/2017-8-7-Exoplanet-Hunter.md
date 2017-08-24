@@ -3,13 +3,13 @@ layout: post
 title: Hunting for Exoplanets Using Machine Learning
 ---
 
-This is a classifier designed to discover exoplanet-containing stars using only light flux data. The flux data was obtained from [Kaggle](https://www.kaggle.com/keplersmachines/kepler-labelled-time-series-data).
+<span style="font-size:14;">This is a classifier designed to discover exoplanet-containing stars using only light flux data. The flux data was obtained from [Kaggle](https://www.kaggle.com/keplersmachines/kepler-labelled-time-series-data).</span>
 
 ## Slides for the Project  
 
 <iframe src="https://docs.google.com/presentation/d/1pucUKCzdeLy-XIkigfJ3_PBa1bkkxwaXUjpiDN_olYA/embed?start=true&loop=true&delayms=10000" frameborder="0" width="700" height="422" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
 
-And here is my Fourier Transform visualization from the slides above. Basically, I took the mean of all frequency spectra for exoplanet-containing stars and for stars without exoplanets and plotted them all together. Where you see orange, there frequencies of stars with no exoplanets dominate. The reverse is true for where you see green: exoplanet-containing stars dominate there.  
+<span style="font-size:14;">And here is my Fourier Transform visualization from the slides above. Basically, I took the mean of all frequency spectra for exoplanet-containing stars and for stars without exoplanets and plotted them all together. Where you see orange, there frequencies of stars with no exoplanets dominate. The reverse is true for where you see green: exoplanet-containing stars dominate there.</span>  
 
 <style>
 

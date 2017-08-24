@@ -2,7 +2,6 @@
 layout: post
 title: Week 4 Day 1 - Second Project - A Model for Investing in Movies
 ---
-# A Model for Investing in Movies  
 Movie business is notorious for being unpredictable in terms of profitability. As such, I decided to create a predictive model that would allow to more accurately estimate how much any given motion picture project would make.
 ## Premise  
 You are a potential investor into a movie project. You need to find the best kind of project to invest in. I need to find the best indicators that any given movie project may succeed financially. The body of this text is going to be fairly high level, but technical details are available in appendices.
