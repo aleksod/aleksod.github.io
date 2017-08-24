@@ -13,7 +13,7 @@ And here is my Fourier Transform visualization from the slides above. Basically,
 
 <style>
 
-body {
+svg {
   text-align: center;
   font: 10px sans-serif;
 }
