@@ -13,7 +13,7 @@ And here is my Fourier Transform visualization from the slides above. Basically,
 
 <style>
 
-div {
+body {
   text-align: center;
   font: 10px sans-serif;
 }
@@ -44,7 +44,7 @@ div {
 }
 
 </style>
-<div>
+<body>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -86,7 +86,7 @@ var area = d3.svg.area()
     .x(function(d) { return x(d.frequency); })
     .y1(function(d) { return y(d["avg.spectrum of stars w/exoplanets"]); });
 
-var svg = d3.select("div").append("svg")
+var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -159,4 +159,4 @@ d3.csv("/data/exoplanet_flux_spectrum.csv", function(error, data) {
 });
 
 </script>
-</div>
+</body>
