@@ -44,8 +44,9 @@ svg {
 }
 
 </style>
-<body>
+
 <div class="target"></div>
+
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -160,4 +161,3 @@ d3.csv("/data/exoplanet_flux_spectrum.csv", function(error, data) {
 });
 
 </script>
-</body>
