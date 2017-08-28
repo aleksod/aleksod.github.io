@@ -45,7 +45,7 @@ svg {
 
 </style>
 
-<div id="target"></div>
+<!-- <div id="rget"></div> -->
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
@@ -88,7 +88,7 @@ var area = d3.svg.area()
     .x(function(d) { return x(d.frequency); })
     .y1(function(d) { return y(d["avg.spectrum of stars w/exoplanets"]); });
 
-var svg = d3.select("target").append("svg")
+var svg = d3.select("#target").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
