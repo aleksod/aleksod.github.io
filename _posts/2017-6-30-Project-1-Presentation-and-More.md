@@ -2,6 +2,9 @@
 layout: post
 title: Week 1 Day 5 - Project 1 Presentation and More
 ---
+
+![title image](http://cdn.newsday.com/polopoly_fs/1.13516211.1493074967!/httpImage/image.jpeg_gen/derivatives/landscape_1280/image.jpeg)
+
 The day started half an hour late, at 10:00 AM instead of 9:30 AM. Due to morning presentations, every group of 4 that was involved in the very first Metis Project was huddled somewhere practicing their presentations. My group did, as well.  
 
 All presentations without exception tackled the first Project at Metis codenamed "Benson" from different angles, and it was nice to see various solutions that the teams came up with. Presentations lasted till about lunch time. I will post our group's project at some point, too.  

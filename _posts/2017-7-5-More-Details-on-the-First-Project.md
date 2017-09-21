@@ -2,6 +2,9 @@
 layout: post
 title: Week 2 Day 1 - More Details on the First Project
 ---
+
+![title image](https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/MetroCard.SVG/1280px-MetroCard.SVG.png)
+
 Today I would like to shed more light on the first project I have previously mentioned in [my last blog post](https://aleksod.github.io/Project-1-Presentation-and-More/). The premise of the task is as follows:  
 
 ## Project Benson

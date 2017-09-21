@@ -3,6 +3,8 @@ layout: post
 title: Space Wars! or Star Trek through the Years
 ---
 
+![title image](http://www.startrek.com/uploads/assets/articles/f28fd92f1b6de1f3013f5fcd3fe5703348a71cf8.png)
+
 This is my topic exploration of Star Trek TV series and movies (not including the latest alternative universe Star Trek movies). I was particularly interested in topic distribution through time.
 
 ## Presentation Slides for the Project  

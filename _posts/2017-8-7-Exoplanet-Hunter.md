@@ -3,6 +3,8 @@ layout: post
 title: Hunting for Exoplanets Using Machine Learning
 ---
 
+![title image](https://www.nasa.gov/sites/default/files/thumbnails/image/k2_100planet_header.png)
+
 This is a classifier designed to discover exoplanet-containing stars using only light flux data. The flux data was obtained from [Kaggle](https://www.kaggle.com/keplersmachines/kepler-labelled-time-series-data).
 
 ## Slides for the Project  

@@ -3,6 +3,8 @@ layout: post
 title: Codename HeliTrack
 ---
 
+![title image](https://www.wired.com/images_blogs/dangerroom/2010/11/061109-F-9999X-0471.jpg)
+
 Identifying and Tracking Ground Objects from Air to Improve Public Safety and Military Defense Capabilities (You can view the presentation online [here](https://docs.google.com/presentation/d/e/2PACX-1vQuCGiDUtic_qHUC4cYvti4GBEuiHFdfCJHUNcjsOcy3bD8EBUe51VdLiOq3yavRLEc_sPuhjduNr3U/pub?start=true&loop=false&delayms=15000). You can also go to [the project's GitHub repository](https://github.com/aleksod/Main_Repo/tree/master/Projects/HeliTrack) for more technical details.)
 
 ## Motivation  

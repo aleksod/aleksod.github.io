@@ -2,6 +2,9 @@
 layout: post
 title: Week 4 Day 1 - Second Project - A Model for Investing in Movies
 ---
+
+![title image](http://cdn.history.com/sites/2/2015/06/States_california-hollywood-sign-H.jpeg)
+
 Movie business is notorious for being unpredictable in terms of profitability. As such, I decided to create a predictive model that would allow to more accurately estimate how much any given motion picture project would make.  
 
 ## Premise  
