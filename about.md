@@ -16,7 +16,7 @@ Ever since learning about computer vision in Machine Learning class taught by Pr
 
 ### More Information
 
-TBD
+You can find my resume [here](https://drive.google.com/file/d/0BzDqHB4QtW66UlVLZE9EQ05LN0k/view?usp=sharing).
 
 ### Contact me
 
