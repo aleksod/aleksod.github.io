@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Alexei began as an interdisciplinary Engineer and found himself driven by statistics and data.  His past projects involved programmatic solutions to problems in the field of Biomedical Engineering spanning issues from sub cellular image analysis to experiment design and execution. One Machine Learning course brought into focus his true passion.
+Alexei began as an interdisciplinary Engineer and found himself driven by statistics and data.  His past projects involved programmatic solutions to problems in the field of Biomedical Engineering spanning issues from subcellular image analysis to experiment design and execution. One Machine Learning course brought into focus his true passion.
 Alexei thrives on
 - Using advanced algorithms and statistics to harness the power of data
 - Collating and refining raw data across multiple sources and technologies
