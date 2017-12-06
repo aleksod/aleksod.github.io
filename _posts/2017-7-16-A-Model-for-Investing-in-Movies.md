@@ -7,6 +7,8 @@ title: Week 4 Day 1 - Second Project - A Model for Investing in Movies
 
 Movie business is notorious for being unpredictable in terms of profitability. As such, I decided to create a predictive model that would allow to more accurately estimate how much any given motion picture project would make.  
 
+You can find the source code for the project [here](https://github.com/aleksod/Main_Repo/tree/master/Projects/Movie-Investing-Model).
+
 ## Premise  
 You are a potential investor into a movie project. You need to find the best kind of project to invest in. I need to find the best indicators that any given movie project may succeed financially. The body of this text is going to be fairly high level, but technical details are available in appendices.  
 
@@ -43,5 +45,3 @@ def invboxcox(y,ld):
 ```
 
 <iframe src="https://docs.google.com/presentation/d/15nYh2ICHJ9ZoVk-m5DHrCMui4yDV3N7i2V4mADXclHw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-You can find the source code for the project [here](https://github.com/aleksod/Main_Repo/tree/master/Projects/Movie-Investing-Model).

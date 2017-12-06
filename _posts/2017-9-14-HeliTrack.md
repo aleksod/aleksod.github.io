@@ -65,5 +65,3 @@ In the future, I’d like to expand the scope of this project to better localize
 ## References  
 1. "NSA Head: Surveillance Helped Thwart More Than 50 Terror Plots." Washington Post. N. p., 2017. Web. 7 Sept. 2017.
 2. "Neovision2 Dataset - Ilab - University Of Southern California." Ilab.usc.edu. N. p., 2017. Web. 8 Sept. 2017.
-
-You can find the source code for the project [here](https://github.com/aleksod/Main_Repo/tree/master/Projects/HeliTrack).
