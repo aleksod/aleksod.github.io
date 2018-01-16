@@ -3,7 +3,7 @@ layout: post
 title: Dockerizing Your Python App (oh, and Mining Text from PDFs Along the Way)
 ---
 
-![title image](http://mikebirdgeneau.com/theme/images/docker_python.jpg)
+<img align="center" src="http://mikebirdgeneau.com/theme/images/docker_python.jpg">
 
 # Intro
 I have been out of Metis for several months now, but I haven't been standing still. Apart from a constant applying to jobs and attending Python and Data Science related meetups, I also have been doing some volunteering and freelancing on the side (more on that in later posts). Today I would like to tell you about something I encountered during one of my freelancing jobs.
