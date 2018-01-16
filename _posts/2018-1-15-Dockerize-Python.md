@@ -103,7 +103,71 @@ writer.save()
 ```
 As you can see, I used a heavy dose of Python exception handling via `try:` and `except:` to make sure everything went as smoothly as it could and no fields would go unpopulated. The resultant `output.xlsx` file would be deposited into the same folder where PDF files were stored.
 
-# Deploying my Python Script on the Client's Machine
+# Deploying Python Script on the Client's Machine
 Now came the tricky part. How do I make sure everything runs smoothly on the other end and the script works exactly as it did on my machine?  
 
-In order for the transition to go smoothly, I stayed in a chatroom with my client and walked him through the execution process. At first I thought hosting my code privately on BitBucket and inviting him to be able to clone it would be a part of the solution. Unfortunately, the client did not have GIT set up, so he had to manually download the script every time I made changes to it. And changes did have to be made, as we soon discovered few quirks due to his files not always being structured the same way. I.e. what PyPDF2 saw did not always have the same RegEx pattern, so I had to broaden my patterns' scope. This resulted in many back and forths with the client. On top of that, for some reason his `pandas` module also needed to have `openpyxl` in order to work, something that was not the case on my own machine.
+In order for the transition to go smoothly, I stayed in a chatroom with my client and walked him through the execution process. At first I thought hosting my code privately on BitBucket and inviting him to be able to clone it would be a part of the solution. Unfortunately, the client did not have GIT set up, so he had to manually download the script every time I made changes to it. And changes did have to be made, as we soon discovered few quirks due to his files not always being structured the same way. I.e. what PyPDF2 saw did not always have the same RegEx pattern, so I had to broaden my patterns' scope. This resulted in many back and forths with the client. On top of that, for some reason his `pandas` module also needed to have another `openpyxl` module installed in order to work, something that was not the case on my own machine.  
+
+Needless to say, this was not a hassle-free course to take, so I decided to simplify things for my client as well as my future projects by looking into containerization via Docker.
+
+# Dockerizing Your Python Script (Finally!)
+Long story short, I followed [instructions at runnable](https://runnable.com/docker/python/dockerize-your-python-application) to dockerize my app. My specific implementation was as folows:  
+
+The folder where I had my `main.py` script became my Docker-building folder. Every Docker build needs a special file called `Dockerfile` (notice no file extension, it is important!) that tells Docker how to proceed with the build. The lines contained in that file are pretty self-explanatory:
+
+```Dockerfile
+# Use an official Python runtime as a parent image
+FROM python:3
+
+# Copy the current directory contents into the container at /
+ADD main.py /
+
+# Install any needed packages
+RUN pip install pandas pypdf2 openpyxl
+
+# Define environment variable
+ENV NAME PDFExtract
+
+# Run main.py when the container launches
+CMD ["python", "./main.py"]
+```
+The breakdown of Dockerfile commands is below:
+- `FROM` tells Docker which image you base your image on (in the example, Python 3).
+- `ADD` tells Docker which files to include in the build and where to place them within the container.
+- `RUN` tells Docker which additional commands to execute.
+- `ENV` just gives a name to the Docker image.
+- `CMD` tells Docker to execute the command when the image loads.
+
+Speaking of images, I think the best way to think of the difference between them and containers is containers are instantiated images.
+
+Once `Dockerfile` was created, I proceeded with running the following command in Terminal to build an image:
+```bash
+docker build -t pdfextract .
+```
+After the build is done, the image can be run directly on your machine. All I had to do was run the following Terminal command:
+```bash
+docker run -v $(pwd):/data pdfextract
+```
+Notice `-v $(pwd):/data` portion. There, I tell Docker to include the current PDF-containing directory in the container under `/data` folder. Take a look at my `main.py` script, it had `path = 'data/'` for the path to PDFs, so I had to include it. Naturally, if your Python app is self-contained and doesn't need anything else, you can just run `docker run image-name` Terminal command.
+
+# Deploying Docker Container on Your Client's Machine
+This is all nice and good, but how do I transfer this image to my client's computer? In order to accomplish this task, I needed to use some online repository that would store Docker images. Docker provides Docker Hub for this task. In order to host your image on Docker Hub, I followed [instructions on the official Docker site](https://docs.docker.com/get-started/part2/#share-your-image). In my case, I did as described below:  
+
+I already had an account on [cloud.docker.com](cloud.docker.com), so all I had to do to log into it was run `docker login` in the Terminal. After I provided my username and password, I was ready to push my image to Docker Hub. But first, the image needed to be properly tagged. Even though this step is optional, it is recommended, since it is the mechanism that registries use to give Docker images a version. Tagging is easy:
+```bash
+docker tag pdfextract my-username/my-clients-project:a-good-descriptive-tag
+```
+To upload this newly created and tagged image, I ran
+```bash
+docker push my-username/my-clients-project:a-good-descriptive-tag
+```
+And that's it! The image is now hosted on Docker Hub and your client can easily run it simply by entering this Terminal command:
+```bash
+docker run username/project:tag
+```
+In my case, this was a little bit more complicated since I had to include the PDF-containing folder in the Terminal line. I instructed my client to navigate to the right folder via Terminal and then execute the following line:
+```bash
+docker run -v $(pwd):/data -it username/project:tag
+```
+# Conclusion
+By dockerizing my Python app, I was able to produce the right environment consistently no matter the machine it is run on, so the script was executed correctly and predictably every time. This way, guiding my client during the deployment was minimal.
