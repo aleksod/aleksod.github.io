@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dockerizing Your Python App and Mining Text from PDFs Along the Way
+comments: true
 ---
 
 <img align="center" src="http://mikebirdgeneau.com/theme/images/docker_python.jpg">

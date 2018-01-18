@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Codename HeliTrack
+comments: true
 ---
 
 ![title image](https://www.wired.com/images_blogs/dangerroom/2010/11/061109-F-9999X-0471.jpg)

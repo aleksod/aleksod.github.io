@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Space Wars! or Star Trek through the Years
+comments: true
 ---
 
 ![title image](http://www.startrek.com/uploads/assets/articles/f28fd92f1b6de1f3013f5fcd3fe5703348a71cf8.png)

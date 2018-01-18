@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hunting for Exoplanets Using Machine Learning
+comments: true
 ---
 
 ![title image](https://www.nasa.gov/sites/default/files/thumbnails/image/k2_100planet_header.png)

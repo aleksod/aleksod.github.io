@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Week 4 Day 1 - Second Project - A Model for Investing in Movies
+comments: true
 ---
 
 ![title image](http://cdn.history.com/sites/2/2015/06/States_california-hollywood-sign-H.jpeg)
