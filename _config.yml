@@ -36,7 +36,7 @@ footer-links:
 disqus: in2ds
 
 # Add the languages available in your website into your _config.yml (obligatory):
-languages: ["en", "ru"]
+# languages: ["en", "ru"]
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
