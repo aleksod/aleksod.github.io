@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Week 2 Day 1 - More Details on the First Project
+comments: true
 ---
 
 ![title image](https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/MetroCard.SVG/1280px-MetroCard.SVG.png)

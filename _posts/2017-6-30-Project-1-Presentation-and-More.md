@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Week 1 Day 5 - Project 1 Presentation and More
+comments: true
 ---
 
 ![title image](http://cdn.newsday.com/polopoly_fs/1.13516211.1493074967!/httpImage/image.jpeg_gen/derivatives/landscape_1280/image.jpeg)
