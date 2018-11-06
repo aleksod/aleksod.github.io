@@ -40,10 +40,7 @@ My example will also work exclusively with Ubuntu 16.04, but that is not a stric
 
 SSH into your Chef server, switch to `root` with `sudo su` command, and then download, install, and set up Chef server software by following steps 1 through 6 inclusively in [the official documentation](https://docs.chef.io/install_server.html#standalone):
 
-> 1. Download the package from https://downloads.chef.io/chef-server/.  
-
-I downloaded the package directly to the VM instance by using `wget` command. 
-
+> 1. Download the package from https://downloads.chef.io/chef-server/. *(I downloaded the package directly to the VM instance by using `wget` command.)*
 > 2. Upload the package to the machine that will run the Chef server, and then record its location on the file system. The rest of these steps assume this location is in the /tmp directory.
 >
 > 1. As a root user, install the Chef server package on the server, using the name of the package provided by Chef. For Red Hat Enterprise Linux and CentOS:
@@ -236,8 +233,12 @@ NOTE: Remember filepaths used in steps 5 and 6.
     $ ls chef-repo/.chef
     alex.pem  myorg-validator.pem
     ```
+
     > #### Create the config.rb File
-    > Navigate to the ~/chef-repo/.chef directory and create the config.rb using the knife configure tool. First, you need to know the chef server URL, go to your <u>server</u> and look up its address:
+    > Navigate to the ~/chef-repo/.chef directory and create the config.rb using the knife configure tool. 
+
+    First, you need to know the chef server URL, go to your <u>server</u> and look up its address:
+
     ```shell
     $ cat /etc/hosts
     127.0.0.1 localhost
@@ -253,7 +254,9 @@ NOTE: Remember filepaths used in steps 5 and 6.
     10.168.0.5 chefserver.us-west2-a.c.chef-demo-221022.internal chefserver  # Added by Google
     169.254.169.254 metadata.google.internal  # Added by Google
     ```
+
     I am not sure about other platforms, but GCP will have its `.internal` address tagged with "Added by Google". Copy it and use it when running `knife configure` command. Notice the little discrepancy between the default chef server value and the actual server address you need to put in:
+
     ```shell
     $ knife configure
     WARNING: No knife configuration file found. See https://docs.chef.io/config_rb_knife.html for details.
@@ -360,7 +363,7 @@ $ knife bootstrap chefnode2
 $ knife bootstrap chefnode3
 ```
 
-> And then while the bootstrap operation is running, the command window will show something like the > following:
+> And then while the bootstrap operation is running, the command window will show something like the following:
 >
 > ```shell
 > Bootstrapping Chef on 123.45.6.789
@@ -400,7 +403,7 @@ $ knife bootstrap chefnode3
 $ knife client show chefnode1.us-west2-a.c.chef-demo-221022.internal
 ```
 
-> where name_of_node is the name of the node that was just bootstrapped. The Chef server will return > something similar to:
+> where name_of_node is the name of the node that was just bootstrapped. The Chef server will return something similar to:
 
 ```shell
 admin:     false
@@ -409,7 +412,7 @@ name:      chefnode1.us-west2-a.c.chef-demo-221022.internal
 validator: false
 ```
 
-> and to show the full list of nodes (and workstations) that are registered with the Chef server, run > the following command:
+> and to show the full list of nodes (and workstations) that are registered with the Chef server, run the following command:
 >
 > ```shell
 > $ knife client list
